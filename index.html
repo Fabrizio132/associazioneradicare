@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>In Manutenzione</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400&display=swap"
+    rel="stylesheet" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     :root {
       --bg: #0e0e0e;
@@ -33,16 +41,21 @@
       position: fixed;
       inset: 0;
       background-image:
-        linear-gradient(rgba(200,245,96,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(200,245,96,0.03) 1px, transparent 1px);
+        linear-gradient(rgba(200, 245, 96, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200, 245, 96, 0.03) 1px, transparent 1px);
       background-size: 60px 60px;
       animation: gridMove 20s linear infinite;
       pointer-events: none;
     }
 
     @keyframes gridMove {
-      0%   { transform: translateY(0); }
-      100% { transform: translateY(60px); }
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(60px);
+      }
     }
 
     .container {
@@ -53,8 +66,15 @@
     }
 
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .badge {
@@ -72,8 +92,15 @@
     }
 
     @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50%       { opacity: 0.6; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.6;
+      }
     }
 
     h1 {
@@ -117,6 +144,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="container">
@@ -126,7 +154,8 @@
     <p>Il sito è in fase di costruzione. Torna a trovarci tra poco, stiamo preparando qualcosa di bello.</p>
   </div>
 
-  <div class="footer">© 2025 — La tua Associazione</div>
+  <div class="footer">© 2026 — Radicare</div>
 
 </body>
+
 </html>
