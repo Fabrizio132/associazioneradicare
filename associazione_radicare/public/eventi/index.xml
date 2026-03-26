@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eventi on Associazione Radicare</title>
+    <link>http://localhost:1313/eventi/</link>
+    <description>Recent content in Eventi on Associazione Radicare</description>
+    <generator>Hugo</generator>
+    <language>it-IT</language>
+    <atom:link href="http://localhost:1313/eventi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Festa di primavera al parco</title>
+      <link>http://localhost:1313/eventi/festa-primavera-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/eventi/festa-primavera-2025/</guid>
+      <description>&lt;p&gt;La Festa di primavera è il nostro evento annuale dedicato alla comunità: una giornata all&amp;rsquo;aperto con musica dal vivo, mercatino di prodotti locali e laboratori gratuiti per bambini.&lt;/p&gt;&#xA;&lt;h2 id=&#34;programma&#34;&gt;Programma&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;10:00&lt;/strong&gt; — Apertura e accoglienza&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;11:00&lt;/strong&gt; — Laboratorio di pittura per bambini&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;13:00&lt;/strong&gt; — Pranzo comunitario con prodotti locali&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;15:00&lt;/strong&gt; — Concerto folk&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;18:00&lt;/strong&gt; — Saluti finali&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Ingresso libero. Porta qualcosa da condividere!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

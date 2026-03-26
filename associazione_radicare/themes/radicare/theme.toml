@@ -1,0 +1,9 @@
+name = "radicare"
+license = "MIT"
+licenselink = ""
+description = "Tema custom per Associazione Radicare"
+homepage = ""
+min_version = "0.110.0"
+
+[author]
+  name = "Associazione Radicare"

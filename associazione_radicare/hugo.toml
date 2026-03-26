@@ -1,0 +1,109 @@
+##############################################################
+# CONFIGURAZIONE PRINCIPALE — Associazione Radicare
+# Modifica i valori in questa sezione per personalizzare il sito
+##############################################################
+
+baseURL       = "https://associazioneradicare.it/"   # ← cambia con il tuo dominio
+languageCode  = "it-IT"
+title         = "Associazione Radicare"
+theme         = "radicare"
+defaultContentLanguage = "it"
+
+# Numero di articoli per pagina nella sezione news/blog
+[pagination]
+  pagerSize = 6
+
+# Abilita i tag e le categorie
+[taxonomies]
+  tag       = "tags"
+  categoria = "categorie"
+
+##############################################################
+# PARAMETRI GLOBALI DEL SITO
+# Usati nei template con {{ .Site.Params.<nome> }}
+##############################################################
+[params]
+  # --- Identità ---
+  nomeAssociazione = "Associazione Radicare"
+  slogan           = "Radici nel territorio, sguardo al futuro"
+  descrizioneBreve = "Un'associazione culturale che promuove la cultura, la partecipazione e il radicamento nel territorio calabrese."
+  annoFondazione   = 2020
+  partitaIva       = ""          # ← aggiungi se necessario
+
+  # --- Contatti ---
+  email    = "info@associazioneradicare.it"
+  telefono = "+39 000 0000000"
+  indirizzo = "Via Esempio 1, Acri (CS), Calabria"
+
+  # --- Social ---
+  facebook  = "https://facebook.com/associazioneradicare"
+  instagram = "https://instagram.com/associazioneradicare"
+  youtube   = ""   # ← lascia vuoto per nascondere l'icona
+
+  # --- Immagini di default ---
+  logoPath        = "/images/logo.png"           # ← carica il tuo logo qui
+  heroImage       = "/images/hero.jpg"           # ← immagine hero homepage
+  ogImage         = "/images/og-image.jpg"       # ← immagine per i social share (1200x630)
+  faviconPath     = "/images/favicon.ico"
+
+  # --- SEO ---
+  author          = "Associazione Radicare"
+  keywords        = "associazione, cultura, calabria, territorio, radicare, acri"
+
+  # --- Comportamento UI ---
+  mostraNewsInHomepage    = true
+  mostraEventiInHomepage  = true
+  numeroItemsHomepage     = 3    # quante news/eventi mostrare in homepage
+
+##############################################################
+# MENU PRINCIPALE (navbar)
+# weight = ordine di apparizione
+##############################################################
+[[menus.main]]
+  name       = "Chi siamo"
+  url        = "/chi-siamo/"
+  weight     = 1
+
+[[menus.main]]
+  name       = "Progetti"
+  url        = "/progetti/"
+  weight     = 2
+
+[[menus.main]]
+  name       = "Eventi"
+  url        = "/eventi/"
+  weight     = 3
+
+[[menus.main]]
+  name       = "News"
+  url        = "/news/"
+  weight     = 4
+
+[[menus.main]]
+  name       = "Contatti"
+  url        = "/contatti/"
+  weight     = 5
+
+##############################################################
+# MENU FOOTER (link secondari in basso)
+##############################################################
+[[menus.footer]]
+  name   = "Privacy Policy"
+  url    = "/privacy/"
+  weight = 1
+
+[[menus.footer]]
+  name   = "Statuto"
+  url    = "/statuto/"
+  weight = 2
+
+##############################################################
+# MARKUP — abilita HTML grezzo nei file Markdown
+##############################################################
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true   # permette HTML inline nei contenuti .md
+
+[markup.highlight]
+  style = "friendly"

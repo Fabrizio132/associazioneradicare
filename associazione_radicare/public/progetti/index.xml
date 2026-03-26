@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>I nostri progetti on Associazione Radicare</title>
+    <link>http://localhost:1313/progetti/</link>
+    <description>Recent content in I nostri progetti on Associazione Radicare</description>
+    <generator>Hugo</generator>
+    <language>it-IT</language>
+    <lastBuildDate>Fri, 15 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/progetti/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Laboratorio di orticultura urbana</title>
+      <link>http://localhost:1313/progetti/orto-urbano/</link>
+      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/progetti/orto-urbano/</guid>
+      <description>&lt;p&gt;Il laboratorio di orticultura urbana è uno dei nostri progetti di punta: un percorso pratico per imparare a coltivare ortaggi, erbe aromatiche e fiori in spazi urbani ridotti — terrazzi, balconi, cortili condominiali.&lt;/p&gt;&#xA;&lt;h2 id=&#34;obiettivi&#34;&gt;Obiettivi&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Riscoprire il rapporto con la terra e la stagionalità&lt;/li&gt;&#xA;&lt;li&gt;Creare spazi verdi condivisi nei quartieri&lt;/li&gt;&#xA;&lt;li&gt;Ridurre l&amp;rsquo;impatto ambientale degli stili di vita urbani&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;come-partecipare&#34;&gt;Come partecipare&lt;/h2&gt;&#xA;&lt;p&gt;I laboratori si tengono ogni sabato mattina. Per iscriverti scrivi a &lt;a href=&#34;mailto:info@associazioneradicare.it&#34;&gt;info@associazioneradicare.it&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

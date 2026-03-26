@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<div class="page-header">
+  <div class="container">
+    {{ with .Params.categoria }}<span class="card__tag">{{ . }}</span>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    {{ if not .Date.IsZero }}
+    <p class="text-soft" style="margin-top:0.5rem;font-size:0.9rem;">
+      Pubblicato il {{ dateFormat "02 January 2006" .Date }}
+    </p>
+    {{ end }}
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div style="max-width:760px;margin-inline:auto;">
+
+      {{ with .Params.immagine }}
+      <img src="{{ . }}" alt="{{ $.Title }}"
+           style="width:100%;border-radius:var(--radius-lg);margin-bottom:var(--space-md);box-shadow:var(--shadow-md);">
+      {{ end }}
+
+      <div class="prose">
+        {{ .Content }}
+      </div>
+
+      <div style="margin-top:var(--space-lg);padding-top:var(--space-sm);border-top:1px solid var(--color-bordo);">
+        <a href="javascript:history.back()" class="btn btn-outline">← Torna indietro</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{ end }}

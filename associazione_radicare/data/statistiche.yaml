@@ -1,0 +1,12 @@
+# data/statistiche.yaml
+# Modifica questi numeri per aggiornare la sezione "numeri" della homepage
+
+items:
+  - numero: "5+"
+    etichetta: "Anni di attività"
+  - numero: "30+"
+    etichetta: "Progetti realizzati"
+  - numero: "200+"
+    etichetta: "Soci e volontari"
+  - numero: "50+"
+    etichetta: "Eventi organizzati"

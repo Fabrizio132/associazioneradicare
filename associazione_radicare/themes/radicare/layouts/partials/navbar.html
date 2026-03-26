@@ -1,0 +1,38 @@
+<nav class="navbar">
+  <div class="navbar__inner">
+
+    {{/* ── Logo ── */}}
+    <a href="{{ "/" | relURL }}" class="navbar__logo">
+      {{ if .Site.Params.logoPath }}
+        {{/* Se il logo esiste, mostralo; altrimenti fallback al testo */}}
+        <img src="{{ .Site.Params.logoPath }}" alt="Logo {{ .Site.Params.nomeAssociazione }}"
+             onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block'">
+      {{ end }}
+      <span class="navbar__logo-text" id="logo-text"
+            {{ if .Site.Params.logoPath }}style="display:none"{{ end }}>
+        Associazione<br><span>Radicare</span>
+      </span>
+    </a>
+
+    {{/* ── Menu desktop ── */}}
+    <ul class="navbar__nav" id="main-nav" role="menubar">
+      {{ range .Site.Menus.main }}
+      <li role="none">
+        <a href="{{ .URL }}"
+           class="{{ if eq $.RelPermalink .URL }}active{{ end }}"
+           role="menuitem">
+          {{ .Name }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+
+    {{/* ── Hamburger mobile ── */}}
+    <button class="navbar__toggle" id="nav-toggle" aria-label="Apri menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</nav>

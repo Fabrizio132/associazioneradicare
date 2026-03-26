@@ -1,0 +1,91 @@
+---
+title: "Contatti"
+description: "Scrivici, seguici sui social o vieni a trovarci"
+---
+
+{{ define "main" }}
+
+<div class="page-header">
+  <div class="container">
+    <h1>Contatti</h1>
+    <p>Scrivici, seguici sui social o vieni a trovarci</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-lg);align-items:start;">
+
+      {{/* Info contatti */}}
+      <div>
+        <h2 style="margin-bottom:var(--space-md);">Dove siamo</h2>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:1rem;">
+          <li style="display:flex;gap:1rem;align-items:flex-start;">
+            <span style="font-size:1.5rem;">📍</span>
+            <div>
+              <strong>Indirizzo</strong><br>
+              {{ .Site.Params.indirizzo }}
+            </div>
+          </li>
+          <li style="display:flex;gap:1rem;align-items:flex-start;">
+            <span style="font-size:1.5rem;">✉</span>
+            <div>
+              <strong>Email</strong><br>
+              <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+            </div>
+          </li>
+          {{ with .Site.Params.telefono }}
+          <li style="display:flex;gap:1rem;align-items:flex-start;">
+            <span style="font-size:1.5rem;">📞</span>
+            <div>
+              <strong>Telefono</strong><br>
+              {{ . }}
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+
+        <div style="margin-top:var(--space-md);">
+          <h3 style="margin-bottom:0.75rem;">Seguici</h3>
+          <div style="display:flex;gap:1rem;">
+            {{ with .Site.Params.facebook }}
+            <a href="{{ . }}" target="_blank" class="btn btn-outline">Facebook</a>
+            {{ end }}
+            {{ with .Site.Params.instagram }}
+            <a href="{{ . }}" target="_blank" class="btn btn-outline">Instagram</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
+      {{/* Form contatti */}}
+      <div>
+        <h2 style="margin-bottom:var(--space-md);">Scrivici</h2>
+        {{/* Nota: per far funzionare il form su GitHub Pages usa Formspree.io (gratuito) */}}
+        {{/* Sostituisci YOUR_FORM_ID con il tuo ID Formspree */}}
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label class="form-label" for="nome">Nome e cognome</label>
+            <input class="form-input" type="text" id="nome" name="nome" required placeholder="Mario Rossi">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" required placeholder="mario@esempio.it">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="oggetto">Oggetto</label>
+            <input class="form-input" type="text" id="oggetto" name="oggetto" placeholder="Come posso aiutarti?">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="messaggio">Messaggio</label>
+            <textarea class="form-textarea" id="messaggio" name="messaggio" required placeholder="Scrivi qui il tuo messaggio..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Invia messaggio →</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{ end }}

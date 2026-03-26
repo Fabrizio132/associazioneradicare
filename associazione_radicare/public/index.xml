@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Associazione Radicare</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Associazione Radicare</description>
+    <generator>Hugo</generator>
+    <language>it-IT</language>
+    <lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apriamo le iscrizioni per la stagione 2025</title>
+      <link>http://localhost:1313/news/iscrizioni-2025/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/iscrizioni-2025/</guid>
+      <description>&lt;p&gt;Siamo felici di annunciare l&amp;rsquo;apertura delle iscrizioni per la nuova stagione di attività dell&amp;rsquo;Associazione Radicare!&lt;/p&gt;&#xA;&lt;p&gt;Dal laboratorio di orticultura urbana alle passeggiate naturalistiche, dalla fotografia al teatro di comunità: c&amp;rsquo;è spazio per tutti.&lt;/p&gt;&#xA;&lt;p&gt;Per iscriverti scrivi a &lt;a href=&#34;mailto:info@associazioneradicare.it&#34;&gt;info@associazioneradicare.it&lt;/a&gt; o vieni a trovarci ai nostri eventi aperti.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Ci vediamo presto!&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Laboratorio di orticultura urbana</title>
+      <link>http://localhost:1313/progetti/orto-urbano/</link>
+      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/progetti/orto-urbano/</guid>
+      <description>&lt;p&gt;Il laboratorio di orticultura urbana è uno dei nostri progetti di punta: un percorso pratico per imparare a coltivare ortaggi, erbe aromatiche e fiori in spazi urbani ridotti — terrazzi, balconi, cortili condominiali.&lt;/p&gt;&#xA;&lt;h2 id=&#34;obiettivi&#34;&gt;Obiettivi&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Riscoprire il rapporto con la terra e la stagionalità&lt;/li&gt;&#xA;&lt;li&gt;Creare spazi verdi condivisi nei quartieri&lt;/li&gt;&#xA;&lt;li&gt;Ridurre l&amp;rsquo;impatto ambientale degli stili di vita urbani&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;come-partecipare&#34;&gt;Come partecipare&lt;/h2&gt;&#xA;&lt;p&gt;I laboratori si tengono ogni sabato mattina. Per iscriverti scrivi a &lt;a href=&#34;mailto:info@associazioneradicare.it&#34;&gt;info@associazioneradicare.it&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Festa di primavera al parco</title>
+      <link>http://localhost:1313/eventi/festa-primavera-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/eventi/festa-primavera-2025/</guid>
+      <description>&lt;p&gt;La Festa di primavera è il nostro evento annuale dedicato alla comunità: una giornata all&amp;rsquo;aperto con musica dal vivo, mercatino di prodotti locali e laboratori gratuiti per bambini.&lt;/p&gt;&#xA;&lt;h2 id=&#34;programma&#34;&gt;Programma&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;10:00&lt;/strong&gt; — Apertura e accoglienza&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;11:00&lt;/strong&gt; — Laboratorio di pittura per bambini&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;13:00&lt;/strong&gt; — Pranzo comunitario con prodotti locali&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;15:00&lt;/strong&gt; — Concerto folk&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;18:00&lt;/strong&gt; — Saluti finali&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Ingresso libero. Porta qualcosa da condividere!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Associazione Radicare</title>
+    <link>http://localhost:1313/news/</link>
+    <description>Recent content in News on Associazione Radicare</description>
+    <generator>Hugo</generator>
+    <language>it-IT</language>
+    <lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apriamo le iscrizioni per la stagione 2025</title>
+      <link>http://localhost:1313/news/iscrizioni-2025/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/iscrizioni-2025/</guid>
+      <description>&lt;p&gt;Siamo felici di annunciare l&amp;rsquo;apertura delle iscrizioni per la nuova stagione di attività dell&amp;rsquo;Associazione Radicare!&lt;/p&gt;&#xA;&lt;p&gt;Dal laboratorio di orticultura urbana alle passeggiate naturalistiche, dalla fotografia al teatro di comunità: c&amp;rsquo;è spazio per tutti.&lt;/p&gt;&#xA;&lt;p&gt;Per iscriverti scrivi a &lt;a href=&#34;mailto:info@associazioneradicare.it&#34;&gt;info@associazioneradicare.it&lt;/a&gt; o vieni a trovarci ai nostri eventi aperti.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Ci vediamo presto!&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
