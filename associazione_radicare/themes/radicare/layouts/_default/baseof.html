@@ -30,7 +30,7 @@
   {{/* ── CSS ── */}}
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 </head>
-<body>
+<body{{ if .IsHome }} class="has-hero"{{ end }}>
 
   {{/* ── Navbar ── */}}
   {{ partial "navbar.html" . }}

@@ -22,14 +22,22 @@ if (toggle && nav) {
   });
 }
 
-// ── Navbar: aggiungi ombra allo scroll ────────────────────
-const navbar = document.querySelector('.navbar');
+// ── Navbar: trasparente → solida allo scroll ──────────────
+const navbar  = document.querySelector('.navbar');
+const hasHero = document.body.classList.contains('has-hero');
+
 if (navbar) {
-  window.addEventListener('scroll', () => {
-    navbar.style.boxShadow = window.scrollY > 10
-      ? '0 4px 20px rgba(0,0,0,0.12)'
-      : '0 2px 8px rgba(0,0,0,0.08)';
-  }, { passive: true });
+  const onScroll = () => {
+    // Su pagine senza hero: sempre solida
+    // Su homepage: trasparente finché non si scrolla oltre 60px
+    if (!hasHero || window.scrollY > 60) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll(); // applica subito al caricamento
 }
 
 // ── Animazione entrata elementi ──────────────────────────
