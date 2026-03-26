@@ -10,33 +10,36 @@
 <section class="section">
   <div class="container">
 
-    {{/* Layout speciale per eventi: lista verticale con data box */}}
+    {{/* ── EVENTI: griglia card con foto di sfondo, stile "Edizioni" ── */}}
     {{ if eq .Section "eventi" }}
-    <div style="display:flex;flex-direction:column;gap:1rem;max-width:800px;margin-inline:auto;">
+    <div class="eventi-grid">
       {{ range .Pages.ByParam "data" }}
-      <article class="card" style="display:flex;flex-direction:row;">
-        <div class="evento-card__data-box {{ if lt (.Params.data | default now) now }}evento-card--passato{{ end }}">
+      <a href="{{ .RelPermalink }}" class="evento-foto-card">
+
+        {{ with .Params.immagine }}
+          <div class="evento-foto-card__bg" style="background-image: url('{{ . }}');"></div>
+        {{ else }}
+          <div class="evento-foto-card__bg evento-foto-card__bg--placeholder"></div>
+        {{ end }}
+
+        <div class="evento-foto-card__overlay"></div>
+
+        <div class="evento-foto-card__content">
           {{ with .Params.data }}
-          <div class="giorno">{{ dateFormat "02" . }}</div>
-          <div class="mese">{{ dateFormat "Jan" . }}</div>
-          {{ else }}
-          <div class="giorno">–</div>
-          <div class="mese">TBD</div>
+          <span class="evento-foto-card__data">{{ dateFormat "02 Jan 2006" . }}</span>
           {{ end }}
+          <h2 class="evento-foto-card__titolo">{{ .Title }}</h2>
+          {{ with .Params.luogo }}
+          <span class="evento-foto-card__luogo">📍 {{ . }}</span>
+          {{ end }}
+          <span class="evento-foto-card__cta">Scopri di più →</span>
         </div>
-        <div class="card__body" style="flex:1;">
-          {{ with .Params.luogo }}<span class="card__tag">📍 {{ . }}</span>{{ end }}
-          <h2 class="card__titolo">{{ .Title }}</h2>
-          <p class="card__estratto">{{ .Summary | truncate 140 }}</p>
-          <a href="{{ .RelPermalink }}" class="btn btn-primary" style="font-size:0.85rem;padding:0.5rem 1rem;">
-            Dettagli →
-          </a>
-        </div>
-      </article>
+
+      </a>
       {{ end }}
     </div>
 
-    {{/* Layout griglia per tutte le altre sezioni */}}
+    {{/* ── ALTRE SEZIONI: griglia card standard ── */}}
     {{ else }}
     <div class="grid-3">
       {{ range .Pages }}

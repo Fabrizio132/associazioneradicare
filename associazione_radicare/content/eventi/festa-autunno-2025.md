@@ -1,5 +1,5 @@
 ---
-title: "Festa di primavera al parco"
+title: "Festa di autunno al parco"
 description: "Una giornata all'aperto con musica, cibo locale e laboratori per i bambini"
 data: 2025-04-20
 luogo: "Parco comunale, Acri (CS)"

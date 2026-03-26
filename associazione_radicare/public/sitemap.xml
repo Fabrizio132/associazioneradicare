@@ -25,6 +25,12 @@
   </url><url>
     <loc>http://localhost:1313/eventi/</loc>
   </url><url>
+    <loc>http://localhost:1313/eventi/festa-autunno-2025/</loc>
+  </url><url>
+    <loc>http://localhost:1313/eventi/festa-estate/</loc>
+  </url><url>
+    <loc>http://localhost:1313/eventi/festa-inverno-2025/</loc>
+  </url><url>
     <loc>http://localhost:1313/eventi/festa-primavera-2025/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>

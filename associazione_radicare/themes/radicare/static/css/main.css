@@ -588,3 +588,89 @@ p { margin-bottom: 1rem; }
   .section { padding-block: var(--space-md); }
   .footer__bottom { flex-direction: column; text-align: center; }
 }
+
+/* ============================================================
+   EVENTI — griglia card con foto di sfondo (stile "Edizioni")
+   ============================================================ */
+.eventi-grid {
+  display:               grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:                   var(--space-sm);
+}
+@media (max-width: 900px) { .eventi-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .eventi-grid { grid-template-columns: 1fr; } }
+
+.evento-foto-card {
+  position:        relative;
+  display:         block;
+  aspect-ratio:    4 / 3;
+  border-radius:   var(--radius-lg);
+  overflow:        hidden;
+  text-decoration: none;
+  cursor:          pointer;
+}
+.evento-foto-card__bg {
+  position:            absolute;
+  inset:               0;
+  background-size:     cover;
+  background-position: center;
+  transition:          transform 0.4s ease;
+}
+.evento-foto-card__bg--placeholder {
+  background: linear-gradient(135deg, var(--color-verde) 0%, var(--color-marrone) 100%);
+}
+.evento-foto-card:hover .evento-foto-card__bg { transform: scale(1.05); }
+
+.evento-foto-card__overlay {
+  position:   absolute;
+  inset:      0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.75) 100%);
+  transition: background 0.3s ease;
+}
+.evento-foto-card:hover .evento-foto-card__overlay {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.30) 40%, rgba(0,0,0,0.85) 100%);
+}
+
+.evento-foto-card__content {
+  position:       absolute;
+  bottom:         0;
+  left:           0;
+  right:          0;
+  padding:        var(--space-sm);
+  display:        flex;
+  flex-direction: column;
+  gap:            0.25rem;
+}
+.evento-foto-card__data {
+  font-size:      0.75rem;
+  font-weight:    700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color:          var(--color-giallo);
+}
+.evento-foto-card__titolo {
+  font-family: var(--font-titolo);
+  font-size:   1.3rem;
+  font-weight: 700;
+  color:       var(--color-bianco);
+  line-height: 1.2;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.4);
+  margin:      0;
+}
+.evento-foto-card__luogo {
+  font-size: 0.85rem;
+  color:     rgba(255,255,255,0.8);
+}
+.evento-foto-card__cta {
+  display:             inline-block;
+  margin-top:          0.4rem;
+  font-size:           0.8rem;
+  font-weight:         700;
+  color:               var(--color-bianco);
+  text-decoration:     underline;
+  text-underline-offset: 3px;
+  opacity:             0;
+  transform:           translateY(6px);
+  transition:          opacity 0.25s ease, transform 0.25s ease;
+}
+.evento-foto-card:hover .evento-foto-card__cta { opacity: 1; transform: translateY(0); }
